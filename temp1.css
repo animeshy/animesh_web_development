@@ -1,0 +1,47 @@
+.menu {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+background-color: #111;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+   
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #333;
+    
+}
+
+
+body { 
+  background: url(giphy.gif) no-repeat center fixed; 
+  background-size: cover;
+}
+
+
+
+.content {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background: url(giphy.gif) no-repeat center fixed; 
+    background-size: cover;
+}

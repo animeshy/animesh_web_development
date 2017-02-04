@@ -1,0 +1,43 @@
+.menu {
+    display:block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+  
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+   
+    display: inline-block;
+    list-style-type: none;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.content {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #FFD700;
+    padding: 10px;
+    background-image: url(paper.jpg);
+    opacity: 0.65;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+ background-attachment: fixed;
+ background-position: left top;
+ background-image: url(b2.jpg);
+ background-size: cover;
+}
