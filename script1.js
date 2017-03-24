@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",function (event) {
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
-              var message = res.firstName;
+              var message = res.firstName+"<br>";
               message += "Your attendance in";
               message += res.course1+"<br>";
              
