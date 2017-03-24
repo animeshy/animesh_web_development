@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",
         //Fetching name input from text-box
 
    var name = document.getElementById("name").value;
-
+   console.log("marmik");
       
 
   if (name === "Jack") {
