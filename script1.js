@@ -1,6 +1,5 @@
 // Event handling
-document.addEventListener("DOMContentLoaded",
-  function (event) {
+document.addEventListener("DOMContentLoaded",function (event) {
 
     // Unobtrusive event binding
     document.querySelector("button")
@@ -9,18 +8,16 @@ document.addEventListener("DOMContentLoaded",
         //Fetching name input from text-box
 
    var name = document.getElementById("name").value;
-   console.log("marmik");
+
       
 
   if (name === "Jack") {
-     
-      
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
               var message = res.firstName;
-               message += "Your attendance in";
-               message += res.course1;
+              message += "Your attendance in";
+              message += res.course1;
              
               message += " Total lectures conducted in theory are: ";
               message += res.totaltheory1;
@@ -37,16 +34,9 @@ document.addEventListener("DOMContentLoaded",
               else {
                 message += " You are not in defaulters list.";
               }
-          
-          document.getElementById("content").innerHTML = message;
-          
-           
-            });
-
-
-
-   
-      }
+              document.getElementById("content").innerHTML = message
+            }); 
+  }
 
 
 
@@ -56,10 +46,9 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
-              var message = 
-                res.secondName
-               message += "Your attendance in";
-               message += res.course2;
+              var message = res.secondName;
+              message += "Your attendance in";
+              message += res.course2;
              
               message += " Total lectures conducted in theory are: ";
               message += res.totaltheory2;
@@ -76,20 +65,9 @@ document.addEventListener("DOMContentLoaded",
               else {
                 message += " You are not in defaulters list.";
               }
-          document
-        .getElementById("content")
-        .innerHTML = message;
+              document.getElementById("content").innerHTML = message;
           
-            });
-
-
-      }
-
-
-
-  else { }
-
-
-
+          });
   }
-);
+}
+});
