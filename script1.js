@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded",
 
       
 
-  if (name == "Jack") {
+  if (name === "Jack") {
      
       
         $ajaxUtils
@@ -38,8 +38,12 @@ document.addEventListener("DOMContentLoaded",
               else {
                 message += " You are not in defaulters list.";
               }
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
+          
+          document
+        .getElementById("content")
+        .innerHTML = message;
+          
+           
             });
 
 
@@ -49,7 +53,7 @@ document.addEventListener("DOMContentLoaded",
 
 
 
-  else if (name == "Jill") {
+  else if (name === "Jill") {
          
  
         $ajaxUtils
@@ -75,8 +79,10 @@ document.addEventListener("DOMContentLoaded",
               else {
                 message += " You are not in defaulters list.";
               }
-              document.querySelector("#content")
-                .innerHTML = "<h2>" + message + "</h2>";
+          document
+        .getElementById("content")
+        .innerHTML = message;
+          
             });
 
 
