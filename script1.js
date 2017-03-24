@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded",
 
       
 
-  if (name === "Jack") {
+  if (name == "Jack") {
      
       
         $ajaxUtils
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded",
 
 
 
-  else if (name === "Jill") {
+  else if (name == "Jill") {
          
  
         $ajaxUtils
