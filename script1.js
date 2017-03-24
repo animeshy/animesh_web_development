@@ -2,19 +2,13 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
 
-  //Fetching name input from text-box
-
-   var name = document.getElementById("name").value;
-  
-
-
-
-    
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
 
-      
+        //Fetching name input from text-box
+
+   var name = document.getElementById("name").value;
 
       
 
