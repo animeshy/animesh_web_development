@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
-              var message = 
-                res.firstName
+              var message = res.firstName;
                message += "Your attendance in";
                message += res.course1;
              
@@ -39,9 +38,7 @@ document.addEventListener("DOMContentLoaded",
                 message += " You are not in defaulters list.";
               }
           
-          document
-        .getElementById("content")
-        .innerHTML = message;
+          document.getElementById("content").innerHTML = message;
           
            
             });
