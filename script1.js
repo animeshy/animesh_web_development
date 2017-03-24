@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded",
 
   if (name === "Jack") {
      
-        Call server to get the name
+      
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded",
 
   else if (name === "Jill") {
          
-        Call server to get the name
+ 
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
