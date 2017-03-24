@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded",function (event) {
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
-              var message = res.firstName+"<br>";
+              var message = res.firstName;
               message += "Your attendance in";
               message += res.course1+"<br>";
              
               message += " Total lectures conducted in theory are: ";
-              message += res.totaltheory1+"<br>";
+              message += res.totaltheory1;
               message += " Total lectures conducted in labs are:";
-              message += res.totallab1+"<br>";
+              message += res.totallab1;
               message += " Your attendance in theory is: ";
-              message += res.atttheory1+"<br>";
+              message += res.atttheory1;
               message += " Your attendance in lab is: ";
-              message += res.attlab1+"<br>";
+              message += res.attlab1;
          
               if (res.default1) {
                 message += " You in defaulters list ";
@@ -46,18 +46,18 @@ document.addEventListener("DOMContentLoaded",function (event) {
         $ajaxUtils
           .sendGetRequest("name1.json", 
             function (res) {
-              var message = res.secondName+"<br>";
+              var message = res.secondName;
               message += "Your attendance in";
-              message += res.course2+"<br>";
+              message += res.course2;
              
               message += " Total lectures conducted in theory are: ";
-              message += res.totaltheory2+"<br>";
+              message += res.totaltheory2;
               message += " Total lectures conducted in labs are:";
-              message += res.totallab2+"<br>";
+              message += res.totallab2;
               message += " Your attendance in theory is: ";
-              message += res.atttheory2+"<br>";
+              message += res.atttheory2;
               message += " Your attendance in lab is: ";
-              message += res.attlab2+"<br>";
+              message += res.attlab2;
          
               if (res.default2) {
                 message += " You in defaulters list ";
